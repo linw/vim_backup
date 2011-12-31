@@ -4,7 +4,7 @@ set nocompatible
 " 
 filetype plugin indent on
 " 设置python文件缩进
-autocmd FileType python setlocal et sta sw=4 sts=4
+autocmd FileType python setlocal et sta sw=2 sts=2
 
 set t_Co=256
 " 显示行号
@@ -34,23 +34,24 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set ambiwidth=double
 
 
-"set sw=4
+"set sw=2
 " 显示括号匹配
 set showmatch
-" tab 长度设置为4
-set tabstop=4
-" 自动缩进长度设置为4
-set shiftwidth=4
+" tab 长度设置
+set tabstop=2
+" 自动缩进长度设置
+set shiftwidth=2
 " 所有的tab被替换为空格
 set expandtab
 
+autocmd FileType makefile setlocal noexpandtab
 "set autoindent
 "set smartindent
 "set smarttab
 
 "set spell
 
-set tw=78
+set tw=80
 
 set lbr
 
